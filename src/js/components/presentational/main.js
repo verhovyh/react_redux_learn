@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import App from "../../../App";
 
-import SearchBox from "./searchbox";
+import SearchBlock from "./searchblock";
 
 
 class Main extends Component {
@@ -47,7 +47,7 @@ class Main extends Component {
                 <main className="bmd-layout-content">
                     <div className="container">
                         <p>Main content</p>
-                        <SearchBox/>
+                        <SearchBlock/>
                     </div>
                 </main>
             </div>
