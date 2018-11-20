@@ -19,7 +19,7 @@ class Filter extends Component {
                 <h5 className="text-center">Filter results</h5>
                 <div className="container">
                     <div className="row my-4">
-                    <div class="col"></div>
+                    <div className="col"></div>
                     <div className="col-6">
                         <Slider/>
                         <Slider/>
