@@ -1,12 +1,10 @@
 import React, {Component} from 'react'
 
-import ReactDOM from 'react-dom';
+
 import {Homepage} from "./js/components/pages/homepage";
 import {Favorites} from "./js/components/pages/favoritespage";
 import { Switch, Route, Link } from 'react-router-dom';
-
-
-
+import {BeerDetails} from "./js/components/pages/beerdetailspage";
 
 
 class App extends Component {
@@ -43,8 +41,8 @@ class App extends Component {
                         <h3>Beer Catalog</h3>
                     </header>
                     <ul className="list-group">
-                        <a className="list-group-item">Home</a>
-                        <a className="list-group-item">Favorites</a>
+                        <a href="/" className="list-group-item">Home</a>
+                        <a href="/fav" className="list-group-item">Favorites</a>
                     </ul>
                 </div>
 
@@ -52,7 +50,7 @@ class App extends Component {
                     <Switch>
                         <Route exact path='/' component={Homepage} />
                         <Route exact path='/fav' component={Favorites}/>
-
+                        <Route exact path='/details' component={BeerDetails}/>
                     </Switch>
                 </main>
             </div>
