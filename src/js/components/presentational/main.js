@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 import App from "../../../App";
 
 import SearchBlock from "./searchblock";
+import BeerCatalog from "./beercatalog";
 
 
 class Main extends Component {
@@ -22,7 +23,7 @@ class Main extends Component {
     render() {
         return (
             <div
-                className={"bmd-layout-container bmd-drawer-f-l " + (this.state.sideMenuActive ? "bmd-drawer-in" : "bmd-drawer-out")}>
+                className={"container bmd-layout-container bmd-drawer-f-l " + (this.state.sideMenuActive ? "bmd-drawer-in" : "bmd-drawer-out")}>
                 <header className="bmd-layout-header">
                     <div className="navbar navbar-light bg-faded">
                         <button className="navbar-toggler" type="button" onClick={this.handleClick}>
@@ -30,24 +31,25 @@ class Main extends Component {
                             <i className="material-icons">menu</i>
                         </button>
                         <ul className="nav navbar-nav">
-                            <li className="nav-item">Title</li>
+                            <li className="nav-item">Beer Catalog</li>
                         </ul>
                     </div>
                 </header>
                 <div id="dw-s1" className="bmd-layout-drawer bg-faded" aria-expanded={this.state.sideMenuActive}
                      aria-hidden={!this.state.sideMenuActive}>
                     <header>
-                        <a className="navbar-brand">Beer Catalog</a>
+                        <h3>Beer Catalog</h3>
                     </header>
                     <ul className="list-group">
                         <a className="list-group-item">Home</a>
                         <a className="list-group-item">Favorites</a>
                     </ul>
                 </div>
+
                 <main className="bmd-layout-content">
                     <div className="container">
-                        <p>Main content</p>
                         <SearchBlock/>
+                        <BeerCatalog/>
                     </div>
                 </main>
             </div>

@@ -5,10 +5,7 @@ import Main from "./js/components/presentational/main.js"
 
 const App = () => {
     return (
-        <div className="container">
-            <Main/>
-        </div>
-
+        <Main/>
     );
 };
 export default App;

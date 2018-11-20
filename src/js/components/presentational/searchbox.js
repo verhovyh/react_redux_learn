@@ -22,10 +22,14 @@ class SearchBox extends Component{
     render(){
         return(
             <form>
-                <div className={"form-group bmd-form-group " + (this.state.isFocused ? "is-focused" : "") } onFocus={this.onFocus} onBlur={this.onUnFocus}>
+                <div className="row">
+                    <div className="col"/>
+                <div className={"col-8 form-group bmd-form-group " + (this.state.isFocused ? "is-focused" : "") } onFocus={this.onFocus} onBlur={this.onUnFocus}>
                     <label className="bmd-label-floating">Search</label>
                     <input type="search" className="form-control"/>
                     <span className="bmd-help">Search beer</span>
+                </div>
+                    <div className="col"/>
                 </div>
             </form>
         )
