@@ -1,7 +1,6 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 var path = require('path');
 module.exports = {
-
     module: {
         rules: [
             {
@@ -24,6 +23,9 @@ module.exports = {
                 use:['style-loader','css-loader']
             }
         ]
+    },
+    devServer: {
+        historyApiFallback: true
     },
     plugins: [
         new HtmlWebPackPlugin({

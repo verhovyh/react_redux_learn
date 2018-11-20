@@ -1,7 +1,9 @@
 import React, {Component} from 'react'
-import PropTypes from 'prop-types';
+
 import ReactDOM from 'react-dom';
 import {Homepage} from "./js/components/pages/homepage";
+import {Favorites} from "./js/components/pages/favoritespage";
+import { Switch, Route, Link } from 'react-router-dom';
 
 
 
@@ -47,9 +49,11 @@ class App extends Component {
                 </div>
 
                 <main className="bmd-layout-content">
-                    <div className="container">
-                        <Homepage/>
-                    </div>
+                    <Switch>
+                        <Route exact path='/' component={Homepage} />
+                        <Route exact path='/fav' component={Favorites}/>
+
+                    </Switch>
                 </main>
             </div>
         )
@@ -59,4 +63,3 @@ class App extends Component {
 
 export default App;
 
-ReactDOM.render(<App/>, document.getElementById("app"));
