@@ -2,10 +2,6 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 var path = require('path');
 module.exports = {
 
-    // output: {
-    //     path: path.resolve(__dirname, './dist'),
-    //     filename: 'main.js'
-    // },
     module: {
         rules: [
             {
