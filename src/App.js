@@ -41,8 +41,8 @@ class App extends Component {
                         <h3>Beer Catalog</h3>
                     </header>
                     <ul className="list-group">
-                        <a href="/" className="list-group-item">Home</a>
-                        <a href="/fav" className="list-group-item">Favorites</a>
+                        <li><Link to='/'>Home</Link></li>
+                        <li><Link to='/fav'>Favorites</Link></li>
                     </ul>
                 </div>
 

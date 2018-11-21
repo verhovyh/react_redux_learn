@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import App from "../../../App";
-import Slider from "./slider";
+import Slider from "./slider/slider";
 
 
 class Filter extends Component {
@@ -19,12 +19,12 @@ class Filter extends Component {
                 <h5 className="text-center">Filter results</h5>
                 <div className="container">
                     <div className="row my-4">
-                    <div className="col"></div>
-                    <div className="col-6">
+
+                    <div className="col-xs-12 col-lg-8 mx-auto">
                         <Slider/>
                         <Slider/>
                     </div>
-                    <div className="col"></div>
+
                 </div>
                 </div>
 

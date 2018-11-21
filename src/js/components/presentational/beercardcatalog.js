@@ -13,7 +13,7 @@ class BeerCardCatalog extends Component {
 
         return (
 
-            <div className="col-md-4 mt-4">
+            <div className="col-md-6 col-lg-4 mt-4">
                 <div className="card" >
                     <img className="card-img-top"
                          src="https://atlantakick.com/wp-content/uploads/2017/07/sky-2152463_960_720.jpg"

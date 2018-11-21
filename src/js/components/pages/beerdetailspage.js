@@ -5,7 +5,6 @@ export const BeerDetails = () => (
     <div>
         <div className="row mt-4 ">
             <div className="col-8 ">
-
                 <h3 className="strong">Beer Title</h3>
                 <p>
                     <small>This line of text is meant to be treated as fine print.</small>
@@ -62,7 +61,6 @@ export const BeerDetails = () => (
         <h3>Brewing</h3>
         <p>dsvfsassdfsdfdsfsdfsdfsd sdfsdf sdf sdf sdf sd fsdd sdf extends</p>
 
-
         <div className="row">
             <div className="col-3 mt-5">
 
@@ -87,7 +85,5 @@ export const BeerDetails = () => (
                 <h3>Method</h3>
             </div>
         </div>
-
-
     </div>
 )
