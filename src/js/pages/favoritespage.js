@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Favcard from "../components/favorites/favcard.jsx";
+import Favcard from "../components/favorites/FavCard.jsx";
 
 
 export const Favorites = () => (

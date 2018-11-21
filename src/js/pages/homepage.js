@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import Searchblock from "../components/home/search/searchblock.jsx";
-import Beercatalog from "../components/home/beercatalog/beercatalog.jsx";
+import Searchblock from "../components/home/search/SearchBlock.jsx";
+import Beercatalog from "../components/home/beercatalog/BeerCatalog.jsx";
 
 
 export const Homepage = () => (

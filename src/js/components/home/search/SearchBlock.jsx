@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
-import Searchbox from "./searchbox.jsx";
-import Filter from "../filter.jsx";
+import Searchbox from "./SearchBox.jsx";
+import Filter from "../Filter.jsx";
 
 
 
