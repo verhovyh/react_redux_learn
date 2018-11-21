@@ -19,10 +19,10 @@ class Slider extends Component {
         let currentValue = this.state.value;
         return (
             <div className="row  my-3">
-                <div className="col-3">
-                    Slider parameter
+                <div className="col-2 text-right">
+                    IBU
                 </div>
-                <div className="col-1"><label>{currentValue}</label></div>
+                <div className="col-1"><label className="text-center">{currentValue}</label></div>
                 <div className="col slidecontainer">
 
                     <input type="range" min="1" max="100" value={currentValue} className="slider" id="myRange"
