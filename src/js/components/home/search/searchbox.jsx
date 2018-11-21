@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
-import App from "../../../App";
+import App from "../../../../App";
 
 
 class SearchBox extends Component{

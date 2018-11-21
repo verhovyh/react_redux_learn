@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 
 
-import {Homepage} from "./js/components/pages/homepage";
-import {Favorites} from "./js/components/pages/favoritespage";
+import {Homepage} from "./js/pages/homepage";
+import {Favorites} from "./js/pages/favoritespage";
 import { Switch, Route, Link } from 'react-router-dom';
-import {BeerDetails} from "./js/components/pages/beerdetailspage";
+import {BeerDetails} from "./js/pages/beerdetailspage";
 
 
 class App extends Component {

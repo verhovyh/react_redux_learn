@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
-import SearchBox from "./searchbox";
-import Filter from "./filter";
+import Searchbox from "./searchbox.jsx";
+import Filter from "../filter.jsx";
 
 
 
@@ -15,7 +15,7 @@ class SearchBlock extends Component {
     render() {
         return (
            <div>
-            <SearchBox/>
+            <Searchbox/>
             <Filter/>
            </div>
         )
