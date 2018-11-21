@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import Slider from "./slider/Slider";
+import Slider from "./slider/Slider.jsx";
 
 class Filter extends Component {
     constructor() {
