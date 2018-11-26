@@ -1,0 +1,15 @@
+{
+  parser: "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "linebreak-style" : 0,
+    "import/prefer-default-export" : 0,
+    "object-curly-spacing" : 0,
+    "max-len": [1, 120, 2, {ignoreComments: true}],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "prop-types": [2]
+  },
+  "extends": ["plugin:react/recommended", "airbnb-base"]
+}
