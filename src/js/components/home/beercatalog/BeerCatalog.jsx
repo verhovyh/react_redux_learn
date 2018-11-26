@@ -1,31 +1,14 @@
-import React, {Component} from 'react'
-import PropTypes from 'prop-types';
-import ReactDOM from 'react-dom';
-import Beercardcatalog from "./BeerCardCatalog.jsx";
-
-
+import React, {Component} from 'react';
+import BeerCardCatalog from './BeerCardCatalog.jsx';
 
 class BeerCatalog extends Component {
-    constructor() {
-        super();
+  render() {
+    return (
+        <div className="card-columns">
+         {this.props.beers.map(beer => <BeerCardCatalog key={beer.id} name={beer.name} description={beer.description} image={beer.image_url}/>)}
 
-    }
-
-    render(){
-        return(
-            <div className="row">
-                <Beercardcatalog/>
-                <Beercardcatalog/>
-                <Beercardcatalog/>
-                <Beercardcatalog/>
-                <Beercardcatalog/>
-                <Beercardcatalog/>
-                <Beercardcatalog/>
-                <Beercardcatalog/>
-
-            </div>
-        )
-    }
+        </div>);
+  }
 }
 
 export default BeerCatalog;
