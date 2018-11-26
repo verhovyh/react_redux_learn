@@ -5,9 +5,9 @@ import './Toolbar.css';
 import Link from "react-router-dom/es/Link";
 
 const toolbar = props => (
-    <header className="toolbar">
+    <header className="toolbar navbar navbar-light bg-faded">
         <nav className="toolbar__navigation">
-            <div className="toolbar__toggle-button">
+            <div className="navbar-toggler">
                 <DrawerToggleButton click={props.drawerClickHandler}/>
             </div>
             <div className="spacer"/>
