@@ -10,19 +10,12 @@ class BeerCatalogContainer extends Component {
     super();
 
     this.state = {
-      data: [
-        {
-          'id': '1',
-          'name': 'Bill',
-        }, {
-          'id': '2',
-          'name': 'Sarah',
-        }],
+      data: [],
     };
   }
 
   componentDidMount() {
-    punkAPI.getBeers().then(data => this.setState({data: data}));
+    punkAPI.getBeers().then(data => this.setState({data}));
   }
 
   render() {
@@ -31,12 +24,11 @@ class BeerCatalogContainer extends Component {
   }
 }
 
-const mapStateToProps = state => {
-
+const mapStateToProps = (state) => {
   const { data } = state.quotes;
 
   return {
-    quotes: data
+    quotes: data,
   };
 };
 
